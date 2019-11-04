@@ -1,0 +1,22 @@
+/*
+Theme Name: La Pizzeria
+Theme URI: 
+Author: Luis Ortega
+Author URI: 
+Description: Theme para sitios de restaurants o pizzerias
+Requires at least: 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: 
+Text Domain: lapizzeria
+Tags: restaurant, mobile first, responsive, pizza
+
+*/
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
