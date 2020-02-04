@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <?php wp_head(); ?>
+    
 </head>
 <body>
 
@@ -13,7 +14,7 @@
         <div class="contenedor">
             <div class="logo">
                 <a href="<?php echo esc_url( home_url('/') ); ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo.jpg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo.jpg" alt="logotipo de pizzas" class="logotipo">
                 </a>
             </div>
         
@@ -23,8 +24,8 @@
                         $args = array(
                             'theme_location' => 'social-menu',
                             'container' => 'nav',
-                            'container_class' => 'menu_social',
-                            'container_id' => 'menu-social',
+                            'container_class' => 'sociales',
+                            'container_id' => 'sociales',
                             'link_before' => '<span class="sr-text">',
                             'link_after' => '</span>'
                         );
@@ -33,7 +34,7 @@
                 </div>
 
                 <div class="direccion">
-                    <p>Una direccion cualquiera con el numero de una casa</p>
+                    <p>Una direccion cualquiera casa #3</p>
                     <p>Telefono: 0123456789 </p>
                 </div>
             </div>
@@ -43,7 +44,12 @@
 
     </header>
 
-    <nav class="menu-sitio">
+    <div class="menu-principal">
+        
+        <div class="mobile-menu">
+            <a href="#" class="mobile">Menu</a>
+        </div>
+
         <div class="contenedor navegacion">
             <?php 
                 $args = array(
@@ -55,4 +61,4 @@
                 wp_nav_menu( $args );
             ?>
         </div>
-    </nav>
+    </div>        
